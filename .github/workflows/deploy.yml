@@ -1,10 +1,10 @@
-name: Check current working directory
+name: Check current working directory test
 
 on: [push]
 
 jobs:
   checkdir:
-    runs-on: runner1
+    runs-on: [runner1]   # or simply "runner1"
     steps:
       - name: Print cwd
         run: pwd
